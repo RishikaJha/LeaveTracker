@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <span class="h2">Contact-Us</span>
+            <span class="glyphicon glyphicon-earphone h2"></span>
+        </div>
+        <div class="col-md-4">
+            <img src="~/Images/contact3.jpg" align="middle" />
+        </div>
+        <div class="col-md-4">
+            <ol class="breadcrumb">
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li class="active">Contact</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Konquest Kreations</h3>
+            <ul class="list-unstyled">
+                <li>3-973/1, Savitri Sahdev sadan, G1 Ground Floor, Vidyapati Colony, Kanke Road, Ranchi, India -834008</li>
+                <li>Phone: (+91)  9028424154,  9028424154</li>
+                <li>Email: divinerishika@gmail.com     </li>
+                <li>Website: <a href="http://KonquestKreations.com/">http://KonquestKreations.com/</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h3>An invitation to connect with one of the best ad agencies in Ranchi</h3>
+            Konquest Kreations prides on being a customer-focused organisation.
+            It welcomes queries and feedback in person, through email, on social media platform or over phone regarding any of the offered
+            solutions - ad film making, corporate videos, advertisement making, documentary films, online advertising, brochure designing,
+            brand logo designing, digital marketing promotion activity, web designing, web development, business websites, social media campaign,
+            youtube video ads or any other media related service.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="map" style="width:1100px;height:400px">My map will go here</div>
+        </div>
+    </div>
+    <div class="row">
+        <address>
+            <strong>Support:</strong>   <a href="mailto:divinerishika@gmail.com">Support@KonquestKreations.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:divinerishika@gmail.com">Marketing@KonquestKreations.com</a>
+        </address>
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_dLb2IfL5tZ7qWL-OWOxO9gXH9HprXKI"></script>
+<script type="text/javascript">
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(23.344450, 85.305188), zoom: 10
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+</script>
